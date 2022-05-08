@@ -11,6 +11,13 @@
   --white1: #f3eae8;
 }
 
+body {
+  background-image: url("https://images.pexels.com/photos/7827894/pexels-photo-7827894.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 3rem;
+}
+
 .header {
   background-color: var(--black1);
   color: var(--white1);
@@ -31,6 +38,7 @@
   margin-top: 1rem;
   padding: 1rem;
   border-radius: 0.5rem;
+  opacity: 0.7;
 }
 
 .figure--triangle-height {
