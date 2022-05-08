@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./figures.css">
+  <title>Figures</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Figures</h1>
+    <h2>Calculate perimeters and areas</h2>
+  </header>
+
+  <main class="main">
+    <!-- BLOCK -->
+    <section class="figure">
+      <h3 class="figure__title">Square</h3>
+      <form class="figure__form">
+        <label class="figure__label" for="side">Write the side</label>
+        <input class="figure__input" id="squareInput" type="number">
+        <div class="figure__buttons">
+          <button class="figure__button figure__button--gray" type="button"
+            onclick="calculateSquarePerimeter()">Calculate perimeter</button>
+          <button class="figure__button" type="button" onclick="calculateSquareArea()">Calculate area</button>
+        </div>
+      </form>
+      <p class="figure__result" id="squareResult">
+        Resultado...
+      </p>
+    </section>
+    <!-- END OF BLOCK -->
+
+    <!-- BLOCK -->
+    <section class="figure figure--triangle-height">
+      <h3 class="figure__title">Triangle</h3>
+      <form class="figure__form">
+        <label class="figure__label" for="side">Write the side 1</label>
+        <input class="figure__input" id="triangleSide1" type="number">
+
+        <label class="figure__label" for="side">Write the side 2</label>
+        <input class="figure__input" id="triangleSide2" type="number">
+
+        <label class="figure__label" for="side">Write the base</label>
+        <input class="figure__input" id="triangleBase" type="number">
+
+        <label class="figure__label" for="side">Write the height</label>
+        <input class="figure__input" id="triangleHeight" type="number">
+        <div class="figure__buttons">
+          <button class="figure__button figure__button--gray" type="button" onclick="calculateTrianglePerimeter()">
+            Calculate perimeter
+          </button>
+          <button class="figure__button" type="button" onclick="calculateTriangleArea()">Calculate area</button>
+        </div>
+      </form>
+      <p class="figure__result" id="triangleResult">
+        Resultado...
+      </p>
+    </section>
+    <!-- END OF BLOCK -->
+
+    <!-- BLOCK -->
+    <section class="figure">
+      <h3 class="figure__title">Circle</h3>
+      <form class="figure__form">
+        <label class="figure__label" for="side">Write the radio</label>
+        <input class="figure__input" id="circleRadio" type="number">
+
+        <div class="figure__buttons">
+          <button class="figure__button figure__button--gray" type="button" onclick="calculateCirclePerimeter()">
+            Calculate perimeter
+          </button>
+          <button class="figure__button" type="button" onclick="calculateCircleArea()">Calculate area</button>
+        </div>
+      </form>
+      <p class="figure__result" id="circleleResult">
+        Resultado...
+      </p>
+    </section>
+    <!-- END OF BLOCK -->
+  </main>
+
+
+
+  <script src="./figures.js"></script>
+</body>
+
+</html>
